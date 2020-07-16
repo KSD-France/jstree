@@ -2568,8 +2568,7 @@
 					node.childNodes[1].childNodes[0].className += ' jstree-themeicon-hidden';
 				}
 				else if(obj.icon.indexOf('/') === -1 && obj.icon.indexOf('.') === -1) {
-					node.childNodes[1].childNodes[0].className += ' material-icons jstree-themeicon-custom';
-					node.childNodes[1].childNodes[0].innerHTML = obj.icon;
+					node.childNodes[1].childNodes[0].className += ' ' + obj.icon + ' jstree-themeicon-custom';					
 				}
 				else {
 					node.childNodes[1].childNodes[0].style.backgroundImage = 'url("'+obj.icon+'")';
